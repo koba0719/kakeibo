@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCapitalTable extends Migration
+class CreateCapitalsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreateCapitalTable extends Migration
      */
     public function up()
     {
-        Schema::create('capital', function (Blueprint $table) {
+        Schema::create('capitals', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
-            $table->integer('capital');
-            $table->integer('year');
-            $table->integer('month');
+            $table->string('capital');
             $table->timestamps();
         });
     }

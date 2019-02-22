@@ -15,8 +15,9 @@ class PostTableSeeder extends Seeder
         $faker = Faker\Factory::create('ja_JP');
 
         foreach(range(1, 3) as $number) {
-            DB::table('post')->insert([
+            DB::table('posts')->insert([
                 'user_id' => 1,
+                'capital_id' => 1,
                 'category_id' => 100 + $number,
                 'price' => 300,
                 'memo' => '衝動買い',

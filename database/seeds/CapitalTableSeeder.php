@@ -11,11 +11,12 @@ class CapitalTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('capital')->insert([
-            'user_id' => 1,
-            'capital' => 300000,
-            'year' => 2019,
-            'month' => 2,
+        DB::table('capitals')->insert([
+            'capital' => '支出',
+        ]);
+
+        DB::table('capitals')->insert([
+            'capital' => '収入',
         ]);
     }
 }

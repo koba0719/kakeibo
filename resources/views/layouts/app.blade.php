@@ -24,7 +24,8 @@
   <link href="{{ asset('assets/css/sidebar-menu.css') }}" rel="stylesheet" />
   <!-- Custom Style-->
   <link href="{{ asset('assets/css/app-style.css') }}" rel="stylesheet" />
-
+  <!-- Bootstrap DatePicker -->
+  <link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css') }}">
 </head>
 
 <body class="bg-theme bg-theme2">

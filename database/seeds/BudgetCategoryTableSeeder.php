@@ -117,7 +117,7 @@ class BudgetCategoryTableSeeder extends Seeder
         ];
 
         foreach ($category as $c_id => $c_name) {
-            DB::table('budget_category')->insert([
+            DB::table('budget_categories')->insert([
                 'category_id' => $c_id,
                 'category_name' => $c_name,
                 'created_at' => Carbon::now(),
